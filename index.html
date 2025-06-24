@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargobike Services Genève</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo Cargobike Services" class="logo" />
+  <h1>Cargobike Services Genève</h1>
+  <p>Livraisons éco-responsables en vélo cargo pour professionnels et particuliers</p>
+</header>
+
+<section class="about">
+  <h2>À propos</h2>
+  <p>Cargobike Services est une société genevoise spécialisée dans la livraison écologique à vélo cargo. Nous proposons des tournées régulières et des livraisons à la demande, adaptées aux besoins des particuliers et des entreprises.</p>
+</section>
+
+<section class="services">
+  <h2>Nos Services</h2>
+  <ul>
+    <li>Livraisons locales rapides</li>
+    <li>Solutions logistiques pour entreprises (B2B)</li>
+    <li>Livraisons ponctuelles pour particuliers</li>
+    <li>Tournées planifiées et régulières</li>
+    <li>Service personnalisé sur demande</li>
+  </ul>
+</section>
+
+<section class="formulaire">
+  <h2>Demande de devis</h2>
+  <form action="mailto:votremail@example.com" method="POST" enctype="text/plain">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required />
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="type-client">Vous êtes :</label>
+    <select id="type-client" name="type-client">
+      <option value="particulier">Particulier</option>
+      <option value="b2b">Professionnel / B2B</option>
+    </select>
+
+    <label for="type-service">Type de service :</label>
+    <select id="type-service" name="type-service">
+      <option value="ponctuel">Livraison à la demande</option>
+      <option value="regulier">Tournée régulière</option>
+    </select>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<section class="localisation">
+  <h2>Où nous trouver</h2>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.807627642183!2d6.143157115595472!3d46.20439097911681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6506933a9ad9%3A0x2edcdf59b19d7987!2sGenève%2C%20Suisse!5e0!3m2!1sfr!2sch!4v1687619200096!5m2!1sfr!2sch"
+      width="100%"
+      height="300"
+      style="border:0; border-radius: 12px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<section class="socials">
+  <h2>Suivez-nous</h2>
+  <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>Contact : +41 (0)78 210 14 91 | Genève</p>
+</footer>
+
+</body>
+</html>
 
