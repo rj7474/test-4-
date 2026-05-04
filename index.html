@@ -4,88 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARGOBIKE SERVICES - Genève</title>
-    <!-- Import d'une police professionnelle -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* CONFIGURATION GÉNÉRALE */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             color: #ffffff;
-            /* L'image de fond avec un voile noir pour la lisibilité */
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+            /* Le nom du fichier doit être EXACTEMENT celui sur ton GitHub */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
                         url('Capture d\'écran 2026-05-04 164855.png') no-repeat center center fixed;
             background-size: cover;
         }
 
         header {
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
+        }
+
+        .logo-img {
+            max-width: 180px; /* Ajuste la taille de ton logo ici */
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
         }
 
         header h1 {
-            color: #ff8c00;
+            color: #4CAF50; 
             font-size: 2.8em;
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
 
-        header p {
-            font-size: 1.2em;
-            font-weight: 300;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: rgba(255, 140, 0, 0.3);
-            margin: 20px auto;
-            width: 80%;
-        }
-
-        /* BOÎTES DE CONTENU */
         section {
             max-width: 850px;
             margin: 30px auto;
             padding: 30px;
-            background: rgba(20, 20, 20, 0.85); /* Fond sombre transparent */
+            background: rgba(0, 0, 0, 0.8); 
             border-radius: 15px;
-            border: 1px solid rgba(255, 140, 0, 0.2);
-            backdrop-filter: blur(8px); /* Floute l'image derrière */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(76, 175, 80, 0.4);
+            backdrop-filter: blur(5px);
         }
 
         h2 {
-            color: #ff8c00;
-            border-bottom: 2px solid #ff8c00;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
             display: inline-block;
             margin-bottom: 20px;
-            padding-bottom: 5px;
-        }
-
-        p { line-height: 1.6; }
-
-        /* LISTE DES SERVICES */
-        ul {
-            list-style: none;
-            padding: 0;
         }
 
         li {
             margin-bottom: 12px;
             padding-left: 15px;
-            border-left: 3px solid #ff8c00;
-        }
-
-        /* FORMULAIRE & BOUTON */
-        .formulaire {
-            text-align: center;
+            border-left: 3px solid #4CAF50;
         }
 
         .btn-form {
-            background-color: #ff8c00;
+            background-color: #4CAF50;
             color: #ffffff !important;
             padding: 18px 35px;
             text-decoration: none;
@@ -93,119 +69,79 @@
             font-size: 1.2em;
             border-radius: 50px;
             display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+            transition: 0.3s;
             margin-top: 20px;
         }
 
         .btn-form:hover {
-            transform: translateY(-3px);
-            background-color: #e67e00;
-            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6);
+            transform: scale(1.05);
+            background-color: #45a049;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.4);
         }
 
-        /* RÉSEAUX SOCIAUX & LIENS */
         .social-links a {
-            color: #ffffff;
+            color: #4CAF50;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            transition: 0.3s;
-            border-bottom: 1px solid transparent;
-        }
-
-        .social-links a:hover {
-            color: #ff8c00;
-            border-bottom: 1px solid #ff8c00;
-        }
-
-        /* CARTE & FOOTER */
-        .map-container iframe {
-            border-radius: 10px;
-            filter: grayscale(0.3) invert(0.9) hue-rotate(180deg); /* Style carte sombre pro */
+            font-size: 1.1em;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9em;
+            padding: 40px;
             background: rgba(0,0,0,0.9);
-        }
-
-        /* MOBILE ADAPTATION */
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.8em; }
-            section { margin: 15px; padding: 20px; }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <!-- Si ton fichier s'appelle logo.png, il apparaîtra ici -->
+    <img src="logo.png" alt="Cargobike Services Logo" class="logo-img">
     <h1>CARGOBIKE SERVICES</h1>
     <p>Livraisons écoresponsables & Logistique du dernier kilomètre</p>
 </header>
 
 <section class="about">
     <h2>Expertise & Engagement</h2>
-    <p>
-        Cargobike Services est une société genevoise basée à <strong>Chêne-Bourg</strong>, spécialisée dans le transport en vélo cargo triporteur. Depuis 2022, nous proposons notre savoir-faire avec des méthodes d'arrimage et de manutention issues du <strong>transport en camion classique</strong>, adaptées aux besoins des particuliers et des entreprises.
-    </p>
-    <p>
-        Notre mission est d'optimiser la logistique urbaine du dernier kilomètre de manière efficace et logique, afin que chaque partenaire s'engage dans une démarche écoresponsable. C'est un véritable atout pour le <strong>développement RSE</strong> de votre entreprise. Pourquoi ne pas lancer un <strong>projet pilote</strong> avec nous pour vous guider vers une solution durable et autonome ?
-    </p>
-    <p>
-        Vous pouvez également profiter d'un <strong>espace publicitaire stratégique</strong> sur nos vélos cargos pour booster votre visibilité en ville.
-    </p>
-    <p style="font-weight: bold; color: #ff8c00;">N'hésitez plus, passez à l'action.</p>
+    <p>Cargobike Services est une société genevoise basée à <strong>Chêne-Bourg</strong>. Depuis 2022, nous appliquons des méthodes d'arrimage issues du <strong>transport routier classique</strong> au vélo cargo.</p>
+    <p>Optimisez votre <strong>développement RSE</strong> avec nos solutions de logistique durable.</p>
+    <p>Profitez également d'un <strong>espace publicitaire stratégique</strong> sur nos véhicules.</p>
 </section>
 
 <section class="services">
     <h2>Nos Services</h2>
     <ul>
         <li><strong>Réactivité :</strong> Disponible sous 24/48h.</li>
-        <li><strong>Rayon d'action :</strong> 5km réel (point de repère : Pont du Mont-Blanc).</li>
-        <li><strong>Solutions Entreprises :</strong> Drop-off, tournées imprévues, ravitaillement de chantiers, etc.</li>
-        <li><strong>Colis Volumineux & Lourds :</strong> Service dédié aux particuliers (objets encombrants).</li>
-        <li><strong>Pick-up Boutiques :</strong> Retrait de vos achats en magasin et livraison rapide.</li>
-        <li><strong>Montage de meubles :</strong> Manutention et installation professionnelle sur place.</li>
-        <li><strong>Affichage Publicitaire :</strong> Une visibilité mobile et impactante pour votre marque.</li>
+        <li><strong>Rayon d'action :</strong> 5km réel (Point de repère : Pont du Mont-Blanc).</li>
+        <li><strong>B2B :</strong> Drop-off, tournées imprévues, ravitaillement chantiers.</li>
+        <li><strong>Particuliers :</strong> Colis volumineux et lourds.</li>
+        <li><strong>Montage :</strong> Montage de meubles et installation.</li>
+        <li><strong>Pub :</strong> Affichage publicitaire mobile.</li>
     </ul>
 </section>
 
-<section class="formulaire">
-    <h2>Demande de transport & Devis</h2>
-    <p>Besoin d'une livraison ou d'une étude pour votre logistique ?<br>
-    <strong>Réponse rapide garantie.</strong></p>
-    
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSelM9w4WU8LADLE2oI83A_6AUlaVhBl34GIbn2Fomaa3qv1CA/viewform?usp=header" 
-       target="_blank" class="btn-form">
+<section class="formulaire" style="text-align:center;">
+    <h2>Demande de devis</h2>
+    <p>Réponse rapide garantie.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSelM9w4WU8LADLE2oI83A_6AUlaVhBl34GIbn2Fomaa3qv1CA/viewform?usp=header" target="_blank" class="btn-form">
        CLIQUEZ ICI POUR LE FORMULAIRE
     </a>
-</section>
-
-<section class="localisation">
-    <h2>Zone d'intervention</h2>
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.807627642183!2d6.143157115595472!3d46.20439097911681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6506933a9ad9%3A0x2edcdf59b19d7987!2sGenève%2C%20Suisse!5e0!3m2!1sfr!2sch!4v1687619200096!5m2!1sfr!2sch"
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
 </section>
 
 <section class="socials" style="text-align: center;">
     <h2>Suivez-nous</h2>
     <div class="social-links">
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
     </div>
 </section>
 
 <footer>
     <p><strong>Cargobike Services</strong> | Chêne-Bourg, Genève</p>
-    <p>Contact : +41 (0)78 210 14 91 | cargobikeservices@gmail.com</p>
+    <p>+41 (0)78 210 14 91 | cargobikeservices@gmail.com</p>
 </footer>
 
 </body>
