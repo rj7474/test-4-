@@ -5,56 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CARGOBIKE SERVICES - Genève</title>
   <style>
-    /* Style de base pour la clarté */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 20px;
       background-color: #f4f4f4;
     }
     header, section, footer {
       background: #fff;
-      padding: 20px;
+      padding: 25px;
       margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
-    header { text-align: center; border-top: 5px solid #4CAF50; }
-    h1 { color: #4CAF50; margin: 0; }
-    h2 { color: #2e7d32; border-bottom: 2px solid #4CAF50; padding-bottom: 5px; }
-    .logo { max-width: 150px; margin-bottom: 10px; }
+    header { text-align: center; border-top: 6px solid #4CAF50; }
+    h1 { color: #4CAF50; margin: 0; font-size: 2.2em; }
+    h2 { color: #2e7d32; border-bottom: 2px solid #4CAF50; padding-bottom: 8px; margin-top: 0; }
+    .logo { max-width: 160px; margin-bottom: 15px; }
     
-    /* LE BOUTON EN SURBRILLANCE VERTE */
+    /* SECTION FORMULAIRE ÉPURÉE */
     .form-container {
+      background-color: #e8f5e9; 
+      border: 2px solid #4CAF50;
+      padding: 0; /* On laisse le formulaire prendre toute la place interne */
+      overflow: hidden;
+    }
+    .form-header {
+      padding: 20px;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #e8f5e9; /* Fond vert très clair */
-      border: 2px dashed #4CAF50;
     }
-    .btn-google-form {
-      background-color: #4CAF50; /* Vert vif */
-      color: white !important;
-      padding: 20px 30px;
-      text-decoration: none;
-      font-size: 1.3em;
-      font-weight: bold;
-      border-radius: 50px;
-      display: inline-block;
-      transition: transform 0.3s, background-color 0.3s;
-      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 800px; /* Hauteur fixe pour éviter les bugs de scroll */
     }
-    .btn-google-form:hover {
-      background-color: #45a049;
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     ul { list-style: none; padding: 0; }
-    li { margin-bottom: 10px; padding-left: 15px; border-left: 3px solid #4CAF50; }
-    .socials a { margin: 0 10px; color: #4CAF50; font-weight: bold; text-decoration: none; }
+    li { margin-bottom: 12px; padding-left: 15px; border-left: 4px solid #4CAF50; font-size: 1.1em; }
+    .socials a { margin: 0 15px; color: #4CAF50; font-weight: bold; text-decoration: none; border: 1px solid #4CAF50; padding: 8px 15px; border-radius: 5px; }
+    .socials a:hover { background: #4CAF50; color: #fff; }
   </style>
 </head>
 <body>
@@ -68,12 +65,11 @@
 <section class="about">
   <h2>Expertise & Engagement</h2>
   <p>
-    Cargobike Services est une société genevoise basée à <strong>Chêne-Bourg</strong>, spécialisée dans le transport en vélo cargo triporteur. Depuis 2022, nous proposons notre savoir-faire avec des méthodes d'arrimage et de manutention issues du <strong>transport en camion classique</strong>, adaptées aux besoins des clients particuliers et des entreprises.
+    Cargobike Services est une société genevoise basée à <strong>Chêne-Bourg</strong>. Depuis 2022, nous appliquons des méthodes d'arrimage et de manutention issues du <strong>transport routier classique</strong> au service de la logistique urbaine.
   </p>
   <p>
-    L'objectif est d'optimiser la logistique urbaine de manière efficace et logique pour un <strong>développement RSE</strong> durable. Vous pouvez également profiter d'un <strong>espace publicitaire stratégique</strong> sur nos vélos cargos.
+    Optimisez votre <strong>développement RSE</strong> et profitez d'un <strong>espace publicitaire stratégique</strong> sur nos vélos cargos pour une visibilité logique et efficace.
   </p>
-  <p style="font-weight: bold; color: #2e7d32;">N'hésitez plus, passez à l'action.</p>
 </section>
 
 <section class="services">
@@ -81,27 +77,34 @@
   <ul>
     <li><strong>Réactivité :</strong> Disponible sous 24/48h.</li>
     <li><strong>Rayon d'action :</strong> 5km réel (Point de repère : Pont du Mont-Blanc).</li>
-    <li><strong>Solutions Entreprises :</strong> Drop-off, tournées imprévues, ravitaillement chantiers.</li>
-    <li><strong>Colis Volumineux :</strong> Service dédié aux particuliers pour objets lourds.</li>
-    <li><strong>Montage de meubles :</strong> Manutention et installation sur place.</li>
-    <li><strong>Affichage Publicitaire :</strong> Une visibilité mobile et impactante.</li>
+    <li><strong>B2B :</strong> Drop-off, tournées imprévues, ravitaillement chantiers.</li>
+    <li><strong>Particuliers :</strong> Colis volumineux et lourds.</li>
+    <li><strong>Services :</strong> Montage de meubles et installation.</li>
+    <li><strong>Publicité :</strong> Affichage publicitaire mobile.</li>
   </ul>
 </section>
 
-<!-- SECTION FORMULAIRE EN SURBRILLANCE VERTE -->
+<!-- FORMULAIRE GOOGLE SANS DOUBLONS -->
 <section class="form-container">
-  <h2>Demande de transport & Devis</h2>
-  <p>Besoin d'une livraison ou d'une étude logistique ?<br><strong>Réponse rapide garantie.</strong></p>
-  <br>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSelM9w4WU8LADLE2oI83A_6AUlaVhBl34GIbn2Fomaa3qv1CA/viewform?usp=header" 
-     target="_blank" class="btn-google-form">
-     CLIQUEZ ICI POUR LE FORMULAIRE
-  </a>
+  <div class="form-header">
+    <h2>Demande de transport & Devis</h2>
+    <p><strong>Réponse rapide garantie.</strong></p>
+  </div>
+  
+  <div class="iframe-wrapper">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelM9w4WU8LADLE2oI83A_6AUlaVhBl34GIbn2Fomaa3qv1CA/viewform?embedded=true">
+      Chargement…
+    </iframe>
+  </div>
 </section>
 
-<section class="socials" style="text-align: center;">
+<section class="socials" style="text-align: center; padding: 40px 20px;">
   <h2>Suivez-nous</h2>
-  <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+  <div style="margin-top: 20px;">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+  </div>
 </section>
 
 <footer style="text-align: center;">
