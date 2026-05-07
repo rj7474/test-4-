@@ -1,0 +1,22 @@
+name: 🚀 Déploiement Cargobike
+on:
+  push:
+    branches:
+      - principal  # On utilise "principal" car c'est le nom de ta branche sur ta capture
+
+jobs:
+  web-deploy:
+    name: 🚚 Transfert vers Infomaniak
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Récupération du code
+      uses: actions/checkout@v3
+
+    - name: 📂 Synchronisation FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        server-dir: ./web/
